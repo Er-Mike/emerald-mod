@@ -5,7 +5,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
-// Assicurati che questo corrisponda al tuo MOD_ID
+// Assicurarsi che il MOD_ID sia quello corretto
 @Mod(EmeraldMod.MOD_ID)
 public class EmeraldMod {
     public static final String MOD_ID = "emeraldmod";

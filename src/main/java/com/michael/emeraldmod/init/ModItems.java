@@ -19,7 +19,7 @@ public class ModItems {
     public static final RegistryObject<Item> EMERALD_INGOT = ITEMS.register("emerald_ingot",
         () -> new Item(new Item.Properties())); 
 
-    public static final RegistryObject<Item> RAW_EMERALD_ITEM = ITEMS.register("raw_emerald_item",
+    public static final RegistryObject<Item> EMERALD_NUGGET = ITEMS.register("emerald_nuggets",
         () -> new Item(new Item.Properties()));
 
     // 3. Registro per le Schede Creative - QUESTO È IL CREATIVE_MODE_TABS MANCANTE!
@@ -29,14 +29,17 @@ public class ModItems {
     // 4. Definizione della Scheda Creativa (Creative Mode Tab) - USA .builder()
     public static final RegistryObject<CreativeModeTab> EMERALD_TAB = CREATIVE_MODE_TABS.register("emerald_tab",
         () -> CreativeModeTab.builder()
+
             // Imposta l'icona della scheda
             .icon(() -> new ItemStack(EMERALD_INGOT.get()))
+
             // Imposta il titolo visualizzato
-            .title(Component.translatable("itemGroup." + EmeraldMod.MOD_ID + ".emerald_tab"))
+            .title(Component.translatable("Emerald Stuff"))
+
             // Definisce quali oggetti inserire nella scheda
             .displayItems((pParameters, pOutput) -> {
                 pOutput.accept(EMERALD_INGOT.get());
-                pOutput.accept(RAW_EMERALD_ITEM.get());
+                pOutput.accept(EMERALD_NUGGET.get());
             })
             .build());
 }
