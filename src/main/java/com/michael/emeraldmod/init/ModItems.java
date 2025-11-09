@@ -19,7 +19,7 @@ public class ModItems {
     public static final RegistryObject<Item> EMERALD_INGOT = ITEMS.register("emerald_ingot",
         () -> new Item(new Item.Properties())); 
 
-    public static final RegistryObject<Item> EMERALD_NUGGET = ITEMS.register("emerald_nuggets",
+    public static final RegistryObject<Item> EMERALD_NUGGET = ITEMS.register("emerald_nugget",
         () -> new Item(new Item.Properties()));
 
     // 3. Registro per le Schede Creative - QUESTO È IL CREATIVE_MODE_TABS MANCANTE!
