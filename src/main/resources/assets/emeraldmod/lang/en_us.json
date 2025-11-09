@@ -1,4 +1,8 @@
 {
+  // Oggetti
   "item.emeraldmod.emerald_ingot": "Emerald Ingot",
-  "item.emeraldmod.emerald_nugget": "Emerald Nugget"
+  "item.emeraldmod.emerald_nugget": "Emerald Nugget",
+
+  // Equipaggiamento
+  "item.emeraldmod.emerald_sword": "Emerald Sword"
 }

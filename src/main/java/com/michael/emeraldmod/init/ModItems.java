@@ -10,17 +10,35 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
+import net.minecraft.world.item.SwordItem;
+import net.minecraft.world.item.Tiers;
+import net.minecraft.world.item.Item.Properties;
+
 public class ModItems {
     // 1. Registro per gli Oggetti (Item)
     public static final DeferredRegister<Item> ITEMS = 
         DeferredRegister.create(ForgeRegistries.ITEMS, EmeraldMod.MOD_ID);
 
     // 2. Oggetti della Mod
+    // Oggetti
     public static final RegistryObject<Item> EMERALD_INGOT = ITEMS.register("emerald_ingot",
         () -> new Item(new Item.Properties())); 
 
     public static final RegistryObject<Item> EMERALD_NUGGET = ITEMS.register("emerald_nugget",
         () -> new Item(new Item.Properties()));
+
+    // Equipaggiamento
+    public static final RegistryObject<Item> EMERALD_SWORD = ITEMS.register("emerald_sword",
+        () -> new SwordItem(
+
+            ModToolTiers.EMERALD,
+
+            6,     // Bonus attacco
+
+            -2.0f, // Velocità attacco
+
+            new Properties()
+        ));
 
     // 3. Registro per le Schede Creative - QUESTO È IL CREATIVE_MODE_TABS MANCANTE!
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
@@ -40,6 +58,8 @@ public class ModItems {
             .displayItems((pParameters, pOutput) -> {
                 pOutput.accept(EMERALD_INGOT.get());
                 pOutput.accept(EMERALD_NUGGET.get());
+
+                pOutput.accept(EMERALD_SWORD.get());
             })
             .build());
 }

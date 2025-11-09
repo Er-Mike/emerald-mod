@@ -1,0 +1,9 @@
+{
+    "type": "minecraft_blasting",
+    "ingredient":{
+        "item" : "minecraft:emerald"
+    },
+    "result" : "emeraldmod_emerald_ingot",
+    "experience" : 1.0,
+    "cookingtime" : 100
+}
