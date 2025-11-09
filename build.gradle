@@ -11,7 +11,7 @@ archivesBaseName = 'emeraldmod'
 
 java {
     toolchain {
-        java.toolchain.languageVersion = JavaLanguageVersion.of(21) // Minecraft 1.20.1 usa Java 21
+        java.toolchain.languageVersion = JavaLanguageVersion.of(17) // Minecraft 1.20.1 usa Java 21
     }
 }
 

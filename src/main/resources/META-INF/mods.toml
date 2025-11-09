@@ -7,7 +7,7 @@ modId="emeraldmod"
 version="1.0"
 displayName="Emerald Mod"
 authors="Michael"
-description='''A simple mod that adds emerald tools and armor.'''
+description='''Mod test nel chill :)'''
 
 [[dependencies.emeraldmod]]
 modId="forge"
