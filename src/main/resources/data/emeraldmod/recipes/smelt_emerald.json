@@ -1,9 +1,9 @@
 {
-    "type": "minecraft_smelting",
+    "type": "minecraft:smelting",
     "ingredient":{
         "item" : "minecraft:emerald"
     },
-    "result" : "emeraldmod_emerald_ingot",
+    "result" : "emeraldmod:emerald_ingot",
     "experience" : 1.0,
     "cookingtime" : 200
 }

@@ -10,7 +10,10 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
+// Import per aggiungere gli item
 import net.minecraft.world.item.SwordItem;
+import net.minecraft.world.item.PickaxeItem;
+
 import net.minecraft.world.item.Tiers;
 import net.minecraft.world.item.Item.Properties;
 
@@ -38,7 +41,21 @@ public class ModItems {
             -2.0f, // Velocità attacco
 
             new Properties()
-        ));
+        )
+    );
+
+    public static final RegistryObject<Item> EMERALD_PICKAXE = ITEMS.register("emerald_pickaxe",
+        () -> new PickaxeItem(
+
+            ModToolTiers.EMERALD,
+
+            0,
+
+            -2.4f,
+
+            new Properties()
+        )
+    );
 
     // 3. Registro per le Schede Creative - QUESTO È IL CREATIVE_MODE_TABS MANCANTE!
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
@@ -60,6 +77,7 @@ public class ModItems {
                 pOutput.accept(EMERALD_NUGGET.get());
 
                 pOutput.accept(EMERALD_SWORD.get());
+                pOutput.accept(EMERALD_PICKAXE. get());
             })
             .build());
 }
